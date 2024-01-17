@@ -85,7 +85,7 @@ void draw_grid() {
 void _addstr_centered(int tile_value) {
     /* draw the tile number so that it's centered */
     int length = 1;
-    if (tile_value != 0) {
+    if (tile_value != BLANK) {
         // calculate length of integer
         length = log10(tile_value) + 1;
     }
@@ -112,7 +112,7 @@ void display_board() {
         for (int j = 0; j < 4; j++) {
             int tile_value = board[i][j];
             int color_pair = COLOR_PAIR_DEFAULT;
-            if (tile_value != 0) {
+            if (tile_value != BLANK) {
                 color_pair = (int)log2(tile_value);
             }
             attron(COLOR_PAIR(color_pair));
