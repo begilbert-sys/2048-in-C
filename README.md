@@ -1,6 +1,9 @@
 # 2048 in C
 2048, written in C, for the terminal.
 
+![Gif Demo](https://i.imgur.com/f5cBKos.mp4)
+
+
 ### Controls: 
 
 Arrow Keys to move
