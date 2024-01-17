@@ -16,7 +16,7 @@ int board[4][4];
 
 int score = 0;
 
-int won = false;
+bool won = false;
 
 enum Direction {
     UP,
@@ -227,8 +227,7 @@ enum MoveType move_tile(int row, int column, enum Direction direction, bool dont
 }
 
 int _tile_index(int row, int column) {
-    /* map a tile's coords to a single index number
-    used for checking which tiles have been merged */
+    /* map a tile's coords to a single index number */
     return (row << 2) | column;
 }
 bool move_board(enum Direction direction) {
@@ -271,6 +270,7 @@ bool move_board(enum Direction direction) {
                     return true;
                 }
                 else if (move_type == MERGE) {
+                    // blocks the tile from being merged a second time 
                     merged[tile_index] = true;
                     // also blocks off the next tile
                     int next_row = i + ((direction == UP || direction == DOWN) ? row_increment * -1 : 0);
