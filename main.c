@@ -119,7 +119,11 @@ void display_board() {
             move(i * 4 + 2, j * 8 + 1);
             addstr("       ");
             move(i * 4 + 3, j * 8 + 1);
-            _addstr_centered(tile_value);
+            if (tile_value == BLANK) {
+                addstr("       ");
+            } else {
+                _addstr_centered(tile_value);
+            }
             move(i * 4 + 4, j * 8 + 1);
             addstr("       ");
         }
