@@ -1,7 +1,7 @@
 # 2048 in C
 2048, written in C, for the terminal.
 
-![Img](https://i.imgur.com/rfF1G0f.png)
+<img src='https://i.imgur.com/rfF1G0f.png' width='350'>
 
 
 ### Controls: 
