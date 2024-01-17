@@ -1,7 +1,7 @@
 # 2048 in C
 2048, written in C, for the terminal.
 
-![Gif Demo](https://i.imgur.com/f5cBKos.mp4)
+![Gif Demo](https://im5.ezgif.com/tmp/ezgif-5-08b1b092e3.gif)
 
 
 ### Controls: 
